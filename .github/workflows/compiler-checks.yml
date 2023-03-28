@@ -50,6 +50,8 @@ jobs:
       - name: Install dependencies
         working-directory: compiler
         run: |
+          sudo rm -rf /usr/local
+          
           sudo apt-get update
 
           case ${{ matrix.mpc-backend }} in
