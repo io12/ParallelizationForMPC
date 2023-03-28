@@ -49,6 +49,7 @@ jobs:
       - name: Install dependencies
         working-directory: compiler
         run: |
+          sudo rm -rf /usr/local
           sudo apt-get update
           sudo apt-get -y install build-essential make git cmake libssl-dev libboost-program-options-dev graphviz
           
