@@ -40,5 +40,7 @@ SKIPPED_TESTS = {
         "mnist_relu",
         # AssertionError: '[0, 0, 0, 0, 0]' != '[4, 2, 3, 0, 10]'
         "psi",
+        # GitHub-Actions-only failure
+        "chapterfour_figure_12",
     ],
 }
